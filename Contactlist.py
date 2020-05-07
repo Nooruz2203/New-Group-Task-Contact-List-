@@ -6,6 +6,9 @@ class ContactList(list):
         for name in self.names:
             if name == search:
                 print(name)
+        if name !=search:
+            print("Такого в списке нет")
+                
 all_contacts=ContactList(["Ivan","Masha", "Jenya","Katya","Katya"])
-all_contacts.search_by_name("Masha")
+all_contacts.search_by_name("Katyae")
 
